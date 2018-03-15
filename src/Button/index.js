@@ -7,22 +7,18 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-import ButtonSimple from './ButtonSimple';
 import ButtonLink from './ButtonLink';
-import ButtonLabel from './ButtonLabel';
 
-const Button = ({ href, label, children, ...props }) => {
+/* Colors */
+import Colors from '../Colors/colorset.js';
+
+const Button = ({ href, label, children, primary, secondary, ...props }) => {
   /*
    * Different buttons to be rendered, depending on the
    * given properties
    */
-  if (href) {
-    return <ButtonLink href={href} {...props}>{children}</ButtonLink>;
-  } else if (label) {
-    return <ButtonLabel label={label} {...props}>{children}</ButtonLabel>;
-  } else {
-    return <ButtonSimple {...props}>{children}</ButtonSimple>;
-  }
+   console.log(primary);
+  return <ButtonLink href={href} primary={primary} {...props}>{children}</ButtonLink>;
 };
 
 Button.propTypes = {
