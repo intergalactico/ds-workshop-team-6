@@ -13,6 +13,7 @@ import Widget from 'Widget';
 import Header from 'Header';
 import TeamMember from 'TeamMember';
 import Typography from 'Typography';
+import Hero from 'Hero';
 
 export {
   Box,
@@ -25,5 +26,6 @@ export {
   externalImageLink,
   Widget,
   Header,
-  TeamMember
+  TeamMember,
+  Hero
 };

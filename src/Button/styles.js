@@ -26,13 +26,15 @@ const isIcon = ({ isIcon }) => {
 
 /* Default styles for all the buttons */
 export const Button = styled.div`
-  font-family: "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Futura", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 500;
   /* height: 2.40em; */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.3rem 1.0rem;
+  padding: 0.5rem 1.0rem;
+  width: calc(100% - 32px);
+  marign: 0 auto;
   cursor: pointer;
   outline: none;
   border: 2px solid;
