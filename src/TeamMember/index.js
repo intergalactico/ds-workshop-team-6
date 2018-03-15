@@ -50,7 +50,7 @@ const TeamMember = (props) => {
    */
   return (
     <s.TeamMember>
-      <img src={avatar} width="200" />
+      <img src={avatar} width="130" />
       <ts.Header3>{name}</ts.Header3>
       <s.Title>{title}</s.Title>
       {socialList}
