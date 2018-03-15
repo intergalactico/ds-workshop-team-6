@@ -1,5 +1,6 @@
 import React from 'react'
 import { Timeline } from 'react-twitter-widgets'
+import { string } from 'prop-types'
 
 import * as s from './styles.js'
 
@@ -23,5 +24,9 @@ const Widget = (props) => {
     </s.Widget>
   )
 }
+
+Widget.propTypes = {
+  username: string
+};
 
 export default Widget

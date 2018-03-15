@@ -8,6 +8,10 @@ import Box from 'Box';
 import Button from 'Button';
 import Icon from 'Icon';
 import Section, {SectionHeader, SectionText} from 'Section';
+import externalImageLink from 'externalImageLink';
+import Widget from 'Widget';
+import Header from 'Header';
+import TeamMember from 'TeamMember';
 import Typography from 'Typography';
 
 export {
@@ -17,5 +21,9 @@ export {
   Section,
   SectionHeader,
   SectionText,
-  Typography
+  Typography,
+  externalImageLink,
+  Widget,
+  Header,
+  TeamMember
 };
