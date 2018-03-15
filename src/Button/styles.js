@@ -6,6 +6,9 @@
 import styled, { css } from 'styled-components';
 import { isCircular } from 'styled-utils';
 
+/* Colors */
+import colors from '../Colors/colorset.js';
+
 /*
  * In styled-components, you can define functions that output
  * CSS properties. This functions can be called from inside the
@@ -23,26 +26,27 @@ const isIcon = ({ isIcon }) => {
 
 /* Default styles for all the buttons */
 export const Button = styled.div`
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-weight: 400;
-  height: 2.40em;
+  font-family: "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  /* height: 2.40em; */
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0px 1.0em;
+  padding: 0.3rem 1.0rem;
   cursor: pointer;
   outline: none;
-  border: 1px solid;
-  border-color: transparent;
+  border: 2px solid;
+  border-color: ${p => p.primary ? colors.conferenceblue : colors.white};
   border-radius: 3px;
   box-sizing: border-box;
   line-height: 1.5;
   position: relative;
   user-select: none;
   text-decoration: none;
-  background-color: ${p => p.color};
-  color: ${p => p.textColor};
-  font-size: ${p => p.size ? p.size : '1rem'};
+  text-transform: uppercase;
+  background-color: ${p => colors.transparent};
+  color: ${p => p.primary ? colors.conferenceblue : colors.white};
+  font-size: ${p => p.size ? p.size : '0.938rem'};
   &:not(:last-child) {
     margin: 0 0.25em 0 0;
   }

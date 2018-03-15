@@ -13,13 +13,15 @@ const Element = s.Button.withComponent('a').extend`
   pointer-events: ${props => props.disabled ? 'none' : 'default'};
 `;
 
-const ButtonLink = ({ href, children, ...props }) => {
+const ButtonLink = ({ href, children, primary, ...props }) => {
 
   /* Adding an "API" classname, by which it is possible to redefine the component style properties */
   let className = cx('button', 'button--link', props.className);
 
+  console.log(11212, primary);
+
   return (
-    <Element {...props} href={href} className={className}>
+    <Element {...props} primary={primary} href={href} className={className}>
       {children}
     </Element>
   );
