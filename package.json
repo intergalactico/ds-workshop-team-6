@@ -13,7 +13,12 @@
     "flow": "flow",
     "create-component": "./node_modules/add-component/index.js --no-index"
   },
-  "eslintIgnore": ["demo", "lib", "webpack.config.js", "webpack.demo.config.js"],
+  "eslintIgnore": [
+    "demo",
+    "lib",
+    "webpack.config.js",
+    "webpack.demo.config.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/varya/styled-components-lib-setup.git"
@@ -75,6 +80,7 @@
     "react": "^16.x.x",
     "react-dom": "^16.x.x",
     "react-router-dom": "^4.2.2",
+    "react-twitter-widgets": "^1.7.1",
     "recompose": "^0.25.0",
     "styled-components": "^2.1.2",
     "styled-utils": "^1.2.4"
